@@ -58,21 +58,26 @@
           <li>Some include a Pound (#) sign to denote numbers. But it can also be used for symbols. Not reasonable to
             memorize.</li>
         </ul>
+        <li>Commenting out HTML requires &lt;!-- IGNORED --&gt; surrounding the ignored markdown.</li>
       </ul>
       <br>
     </section>
+
     <section class="card" id="css-section">
       <h2>CSS</h2>
       <ul>
-        <li>Cascading Style Sheets are how webpages get styled (and don't look like piles of weirdly formatted text).</li>
+        <li>Cascading Style Sheets are how webpages get styled (and don't look like piles of weirdly formatted text).
+        </li>
         <li>CSS can style elements "inline" or use internal/external style sheets.</li>
         <ul>
           <li>Inline styling involves adding directly to individual elements.</li>
           <ul>
             <li>&lt;h1 style="color:red;"&gt;Dummy Text&lt;/h1&gt;</li>
           </ul>
-          <li>Internal style sheets are stored within the HTML document itself, nested inside &lt;style&gt; elements stored within the &lt;head&gt;.</li>
-          <li>External style sheets are in a separate file. Referenced through &lt;link&gt; elements within &lt;head&gt;.</li>
+          <li>Internal style sheets are stored within the HTML document itself, nested inside &lt;style&gt; elements
+            stored within the &lt;head&gt;.</li>
+          <li>External style sheets are in a separate file. Referenced through &lt;link&gt; elements within
+            &lt;head&gt;.</li>
         </ul>
         <li>CSS looks like this: [selector] {property: value; property: value;}</li>
         <ul>
@@ -81,7 +86,8 @@
         </ul>
         <li>"Margin" refers to space OUTSIDE an element. A margin of 0 indicates NO extra space around an element.</li>
         <li>"Padding" refers to space surrounding the Content within an element. More padding means bigger element.</li>
-        <li>Elements contain Content. Element size is determined by Content and Padding. Elements are spaced from one another based on Margin.</li>
+        <li>Elements contain Content. Element size is determined by Content and Padding. Elements are spaced from one
+          another based on Margin.</li>
         <ul>
           <li>Look up "CSS Box Model" for visuals.</li>
         </ul>
@@ -126,7 +132,26 @@
     <section class="card" id="javascript-section">
       <h2>JavaScript</h2>
       <ul>
-        <li>Enter your JavaScript notes here</li>
+        <li>JavaScript is <s>a double-edged blade where the handle is also a blade</s> a versatile programming language used by modern web browsers.</li>
+        <li>Javascript files are included via &lt;script&gt; elements near the bottom of the web page.</li>
+        <ul>
+          <li>This is so that all HTML elements have been created before any JS code starts fiddling with them.</li>
+          <li>Otherwise, you'll get reference errors out the wazoo.</li>
+        </ul>
+        <li>A variable is a named container that allows us to store data in our code.</li>
+        <li>console.log("whatever") is your best friend for debugging. Use it liberally, and comment it out when irrelevant.</li>
+        <li>Commenting out code is easy and helpful. Don't overdo it though.</li>
+        <ul>
+          <li>Single-line Comments are denoted with // IGNORED</li>
+          <li>Multi-line Comments are denoted with /* IGNORED */ surrounding the ignored lines.</li>
+        </ul>
+        <li>Control flow is the order in which a computer executes code in a script, top to bottom.</li>
+        <li>If/Else statements can be strung together to do all sortsa stuff.</li>
+        <li>For Loop instantiation tends to include a var declaration, end-condition, and do-this-every-iteration statement.</li>
+        <li>Arrays are 1-dimensional containers with indices that start counting up from 0.</li>
+        <ul>
+          <li>var foo = ["bar", "butt", "boo"], with foo[0] === "bar", foo[2] === "boo", and so on.</li>
+        </ul>
       </ul>
     </section>
   </main>
