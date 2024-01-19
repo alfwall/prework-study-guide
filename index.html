@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Prework Study Guide</title>
+  <link rel="stylesheet" href="./assets/style.css">
 </head>
 
 <body>
@@ -57,7 +58,27 @@
     <section class="card" id="css-section">
       <h2>CSS</h2>
       <ul>
-        <li>Enter your CSS notes here</li>
+        <li>Cascading Style Sheets are how webpages get styled (and don't look like piles of weirdly formatted text).</li>
+        <li>CSS can style elements "inline" or use internal/external style sheets.</li>
+        <ul>
+          <li>Inline styling involves adding directly to individual elements.</li>
+          <ul>
+            <li>&lt;h1 style="color:red;"&gt;Dummy Text&lt;/h1&gt;</li>
+          </ul>
+          <li>Internal style sheets are stored within the HTML document itself, nested inside &lt;style&gt; elements stored within the &lt;head&gt;.</li>
+          <li>External style sheets are in a separate file. Referenced through &lt;link&gt; elements within &lt;head&gt;.</li>
+        </ul>
+        <li>CSS looks like this: [selector] {property: value; property: value;}</li>
+        <ul>
+          <li>[selector] can be tag type, tag ID, tag class, or more! Asterisk (*) means ALL ELEMENTS.</li>
+          <li>property/value pairs are individual "Declarations".</li>
+        </ul>
+        <li>"Margin" refers to space OUTSIDE an element. A margin of 0 indicates NO extra space around an element.</li>
+        <li>"Padding" refers to space surrounding the Content within an element. More padding means bigger element.</li>
+        <li>Elements contain Content. Element size is determined by Content and Padding. Elements are spaced from one another based on Margin.</li>
+        <ul>
+          <li>Look up "CSS Box Model" for visuals.</li>
+        </ul>
       </ul>
     </section>
 
