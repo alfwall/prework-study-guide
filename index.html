@@ -1,22 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Prework Study Guide</title>
-  </head>
-  <body>
-    <header id="top">
-      <h1>Prework Study Guide</h1>
-      <img src="./assets/bowtie-cat.png" alt="Profile image of cat wearing a bow tie." />
-    </header>
-    <main>
-      <!-- Student code goes here -->
-    </main>
 
-    <footer>
-      <p>I can code!</p>
-    </footer>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prework Study Guide</title>
+</head>
+
+<body>
+  <header id="top">
+    <h1>Prework Study Guide</h1>
+    <img src="./assets/bowtie-cat.png" alt="Profile image of cat wearing a bow tie." />
+  </header>
+  <main>
+    <section class="card" id="html-section">
+      <h2>HTML</h2>
+      <h3>&nbsp;&nbsp;Class Material</h3>
+      <ul>
+        <li>"Semantic" HTML elements clearly describe its meaning to both browser and developer.</li>
+        <ul>
+          <li>&lt;header&gt;, &lt;main&gt;, and &lt;footer&gt; are the most obvious semantic elements.</li>
+          <li>&lt;section&gt;, &lt;aside&gt;, &lt;nav, &lt;article&gt;, &lt;figure&gt;, &lt;figcaption&gt;, and many
+            others exist! Look em up sometime.</li>
+        </ul>
+        <li>"Non-Semantic" HTML elements don't tell us anything about what could be within them.</li>
+        <ul>
+          <li>&lt;div&gt; and &lt;span&gt; are the most common, alongside &lt;font&gt; and &lt;table&gt;.</li>
+        </ul>
+        <li>The &lt;head&gt; element contains information about the webpage.</li>
+        <li>The &lt;body&gt; element represents the visible content shown to the user.</li>
+        <li>Within body are &lt;header&gt;, &lt;main&gt;, and &lt;footer&gt; child elements.</li>
+        <li>Elements are tags plus contents, whereas tags are just what's in the angle brackets.</li>
+        <li>Header tags range from &lt;h1&gt;, &lt;h2&gt;, to &lt;h6&gt;, decreasing in size.</li>
+        <ul>
+          <li>&lt;h1&gt; should only be used once per page, for accessibility.</li>
+        </ul>
+        <li>Lists can be used to spread out info, like in this segment.</li>
+        <ul>
+          <li>&lt;ol&gt; and &lt;ul&gt; denote Ordered and Unordered Lists, respectively.</li>
+          <li>Lists of any sort contain &lt;li&gt; List Items.</li>
+          <li>Sub-lists can be displayed by adding a whole new &lt;ol&gt; or &lt;ul&gt; alongside list elements.</li>
+        </ul>
+      </ul>
+      <h3>&nbsp;&nbsp;Personal Research</h3>
+      <ul>
+        <li>Displaying special characters like &lt; and &gt; requires "HTML character entities".</li>
+        <ul>
+          <li>Character Entities are required to not conflict with reserved characters when parsing markup.</li>
+          <li>They all start with Ampersand (&amp;) and end with SemiColon (;)</li>
+          <li>Some include a Pound (#) sign to denote numbers. But it can also be used for symbols. Not reasonable to
+            memorize.</li>
+        </ul>
+      </ul>
+    </section>
+    <section class="card" id="css-section">
+      <h2>CSS</h2>
+      <ul>
+        <li>Enter your CSS notes here</li>
+      </ul>
+    </section>
+
+    <section class="card" id="git-section">
+      <h2>Git</h2>
+      <ul>
+        <li>"Version Control" is a method of maintaining a timeline of changes across a project.</li>
+        <li>Git is a relatively reasonable standard tool for version control, though it has quirks.</li>
+        <li>GitHub, on the other hand, is a website that hosts Git repo's on the cloud.</li>
+        <li>We connect to repos securely using SSH keys.</li>
+        <li>git config contains settings for individual users interacting with a repo.</li>
+        <ul>
+          <li>FIRST TIME SETUP, YOU SHOULD USE THESE! It'll make clear whose commits are whose, and how you might
+            contact someone about a commit they made.</li>
+          <li>git config user.name [name]: Prints name of current user, or updates it if [name] is provided.</li>
+          <li>git config user.email [email]: Prints email of current user, or updates it if [email] is provided.</li>
+        </ul>
+        <li>git clone [git@github:repo_name.git]: Download a copy of the repo.</li>
+        <li>git status: checks what branch we are currently on, and if there are changes.</li>
+        <li>git pull origin [source]: Download the most recent updates from [source].</li>
+        <ul>
+          <li>git pull origin MAIN: the most common use case.</li>
+        </ul>
+        <li>git checkout -b branch-name: creates a new branch and switches to it</li>
+        <li>git add -A: Adds changes in the working directory to the staging area.</li>
+        <ul>
+          <li>-A implies "All Changes", but I like to use . for "Everything Here"</li>
+        </ul>
+        <li>git commit -m "A commit message!": Creates a snapshot of changes to the repo.</li>
+        <li>git push origin [branch]: Upload commits from local repo to remote repo.</li>
+        <ul>
+          <li>"git push origin main" is considered bad practice, so push to feature branches instead. Merge afterwards.
+          </li>
+        </ul>
+
+      </ul>
+    </section>
+
+    <section class="card" id="javascript-section">
+      <h2>JavaScript</h2>
+      <ul>
+        <li>Enter your JavaScript notes here</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>I can code!</p>
+  </footer>
+</body>
+
 </html>
